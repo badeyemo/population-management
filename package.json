@@ -1,0 +1,8 @@
+{
+  "name": "population-management",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ludralph/population-management.git",
+  "author": "ludralph <raphaelumoh@gmail.com>",
+  "license": "MIT"
+}
