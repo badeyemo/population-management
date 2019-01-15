@@ -1,0 +1,15 @@
+{
+  "name": "population-management",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ludralph/population-management.git",
+  "author": "ludralph <raphaelumoh@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pg": "^7.8.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.42.0",
+    "sequelize-cli": "^5.4.0"
+  }
+}
