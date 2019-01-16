@@ -1,0 +1,52 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "locationName",
+    "male",
+    "female",
+    "parentLocationId"
+  ],
+  "properties": {
+    "locationName": {
+      "$id": "#/properties/locationName",
+      "type": "string",
+      "title": "The Locationname Schema",
+      "default": "",
+      "examples": [
+        "Pr"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "male": {
+      "$id": "#/properties/male",
+      "type": "integer",
+      "title": "The Male Schema",
+      "default": 0,
+      "examples": [
+        500
+      ]
+    },
+    "female": {
+      "$id": "#/properties/female",
+      "type": "integer",
+      "title": "The Female Schema",
+      "default": 0,
+      "examples": [
+        200
+      ]
+    },
+    "parentLocationId": {
+      "$id": "#/properties/parentLocationId",
+      "type": "integer",
+      "title": "The Parentlocationid Schema",
+      "default": 0,
+      "examples": [
+        3
+      ]
+    }
+  }
+}
