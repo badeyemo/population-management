@@ -4,6 +4,8 @@ const {
   updateCurrentLocation,
   deleteLocationName,
 } = require('../repository/locationRepository')
+const computePopulation = require('../helpers/computePopulation')
+const trimResponse = require('../helpers/trimResponse')
 
 const createNewLocation = async (req, res, next) => {
   try {
@@ -23,10 +25,12 @@ const createNewLocation = async (req, res, next) => {
 const getAllLocation = async (req, res, next) => {
   try {
     const retrieveLocations = await getAllLocations()
+    const formatResponse = trimResponse(retrieveLocations)
+    const result = computePopulation(formatResponse)
     return res.status(200).json({
       status: 'success',
       message: 'Get all locations was successfull',
-      data: retrieveLocations
+      data: result
     })
   } catch (error) {
     res.status(400).json({status: 'error', message: error.message})
@@ -37,7 +41,7 @@ const updateLocation = async (req, res, next) => {
   try {
     const locationData = req.body
     const previousName = req.params.name
-    const updatedLocation = await updateCurrentLocation(previousName, locationData)
+    await updateCurrentLocation(previousName, locationData)
     return res.status(200).json({
       status: 'success',
       message: 'Location name was updated successfully',
