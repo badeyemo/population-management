@@ -41,9 +41,16 @@
     },
     "parentLocationId": {
       "$id": "#/properties/parentLocationId",
-      "type": "integer",
       "title": "The Parentlocationid Schema",
-      "default": 0,
+      "default": null,
+      "validateAnyOf": { "anyOf" : [
+        {
+          "type": "null"
+        },
+        {
+          "type": "integer"
+        }
+      ]},
       "examples": [
         3
       ]
