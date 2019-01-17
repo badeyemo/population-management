@@ -5,14 +5,14 @@ This is a Population Management System that contains a list of locations and the
 
 An API that enables you to:
 
-** Create a new location containing data on the total number of male and female residents within it. ** 
-Please note that locations can be nested within other locations
-> ** List all available locations and their population summaries (total male residents, total female residents, sum total residents) ** 
-> ** Update data for a specific locations ** 
-> **Delete a specified location **
+- Create a new location containing data on the total number of male and female residents within it.
+* Please note that locations can be nested within other locations *
+- List all available locations and their population summaries (total male residents, total female residents, sum total residents)
+- Update data for a specific locations
+- Delete a specified location
 
 ## Available Endpoints
-The documentation for the SMS Management API can be found here [Population API](https://documenter.getpostman.com/view/2052029/RznLGbGX)
+The documentation for the Population Management API can be found here [Population API](https://documenter.getpostman.com/view/2052029/RznLGbGX)
 
 
 ## Dependencies
@@ -30,8 +30,8 @@ The steps outline will provide a walkthrough on how to install the app on your l
 - Clone this repository
 - From the terminal, change directory to the population-management folder
 - Ensure that you are on the **develop** branch. If on any other branch, run `git checkout develop` on the terminal.
--  Run `yarn install` from your terminal in your project directory to install all dependencies
--  Then run the app with the command `yarn start`
+- Run `yarn install` from your terminal in your project directory to install all dependencies
+- Then run the app with the command `yarn start`
 
 
 ## Usage
