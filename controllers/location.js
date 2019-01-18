@@ -11,7 +11,7 @@ const createNewLocation = async (req, res, next) => {
   try {
     const locationData = req.body
     const newLocation = await addLocation(locationData)
-    return res.status(200).json({
+    return res.status(201).json({
       status: 'success',
       message: 'Location created successfully',
       data: newLocation
